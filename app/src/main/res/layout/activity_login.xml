@@ -4,30 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:padding="8dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="PHP Login and Register"
-            android:textColor="@color/colorAccent"
-            android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/register"
+        <EditText
+            android:id="@+id/email_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@android:color/holo_blue_dark"
-            android:text="Register" />
+            android:layout_marginTop="10dp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="text" />
+
 
         <Button
             android:id="@+id/login"
@@ -35,8 +37,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@android:color/holo_blue_dark"
-            android:text="Login" />
-    </LinearLayout>
+            android:text="Login"
+            android:textColor="@android:color/white" />
 
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

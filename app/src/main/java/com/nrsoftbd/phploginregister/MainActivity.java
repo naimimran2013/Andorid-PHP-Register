@@ -23,7 +23,6 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button login = findViewById(R.id.login);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Login.class));
+            }
+        });
 
 
     }
