@@ -13,39 +13,21 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/name_et"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your name"
-            android:inputType="text" />
-
-        <EditText
-            android:id="@+id/email_et"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Email address"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/password_et"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Password"
-            android:inputType="text" />
-
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+            android:text="PHP Login and Register" />
 
         <Button
-            android:id="@+id/signup"
+            android:id="@+id/register"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@android:color/holo_blue_dark"
-            android:text="Sign up"
-            android:textColor="@android:color/white" />
-
+            android:layout_height="wrap_content"
+            android:text="Register" />
     </LinearLayout>
 
 
